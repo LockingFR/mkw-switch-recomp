@@ -22,12 +22,22 @@ defective, and many modes have not been verified. **There is no public playable 
 
 ## Performance — measured, not promised
 
-- On the current hardware reference build, race segments measured between roughly
-  **16 and 19 game frames per second** (heavy scenes, docked). These are descriptive averages,
-  not controlled A/B results.
-- **Neither 30 FPS in heavy scenes nor 60 FPS has been demonstrated.**
-- The game runs at its own speed only when it reaches its frame rate: below it, races run in
-  slow motion. Raising the frame rate is therefore the top priority.
+**The 30 FPS and 60 FPS targets have not been reached.**
+
+Two experimental measurements, taken on a Nintendo Switch with the same internal build (the
+project's current measurement reference), during a few minutes of race play each:
+
+| Date | Average game FPS | Measured over | Notes |
+|---|---|---|---|
+| 9 October 2026 | 16.4 | 30 five-second blocks (150 s) with more than 300 draw calls per frame | individual blocks ranged from about 11 to 24 FPS |
+| 10 October 2026 | 19.1 | 30 five-second blocks (150 s), same selection rule | — |
+
+- These figures describe **those two runs only**. They are not the game's general performance:
+  the course segment, camera, number of effects and console mode (docked or handheld) were not
+  controlled or recorded, and the two runs had different rendering loads.
+- They are descriptive, not a benchmark and not a before/after comparison of any change.
+- In the port, race simulation is currently tied to the rendered frame rate, so races run slower
+  than normal. Raising the frame rate is therefore the top priority.
 
 ## Current focus
 

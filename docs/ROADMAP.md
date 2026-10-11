@@ -12,7 +12,7 @@ race, rendering, music and sound effects, saves, progression, leaving a race, st
 **Done when:** boot, selections, races and exits run without crash on the tested scope;
 rendering and controls verified; audio stable on tested scenes; saves actually read back.
 
-## Phase B — About 30 FPS sustained in heavy races
+## Phase B — Target: about 30 FPS sustained in heavy races (not reached)
 
 Fixed scenes and conditions, paired A/B measurements, and one exact structural optimisation at a
 time on the stage that really limits the frame (guest CPU, memory access, code generation, GX
@@ -22,7 +22,7 @@ decoding, GPU backend, EFB/XFB or synchronisation).
 95 % confidence interval at or above 30, frame times documented, no change of game speed and no
 functional regression, plus a 30-minute session without crash.
 
-## Phase C — Towards 60 FPS
+## Phase C — Target: towards 60 FPS (not reached)
 
 Rebuild CPU/GX/GPU budgets after phase B; parallelism and memory/cache work compatible with exact
 behaviour.

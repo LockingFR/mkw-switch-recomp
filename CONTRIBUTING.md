@@ -5,7 +5,8 @@ Thank you for your interest in MKW Switch, created and led by
 
 ## Before you start
 
-1. **Contact LockingFR first** (GitHub) to agree on the scope of any significant contribution.
+1. **Contact LockingFR first** — open an issue titled "Contribution proposal: …" — to agree on
+   the scope of any significant contribution.
    Most of the runtime lives in a private repository; many changes cannot be reviewed here.
 2. Read [STATUS](docs/STATUS.md) and the [roadmap](docs/ROADMAP.md). Current priorities are race
    performance at correct game speed, then gameplay completeness and stability, then audio.

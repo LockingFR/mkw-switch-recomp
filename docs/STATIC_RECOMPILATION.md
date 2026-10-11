@@ -40,5 +40,5 @@ runtime must reproduce precisely the hardware environment that code expects.
 - **Performance**: translated code is correct first; making it fast without changing behaviour
   is the main ongoing effort (see [STATUS](STATUS.md)).
 
-Projects in the same family that inspired the approach include XenonRecomp (Xbox 360) and
+Comparable static-recompilation projects include XenonRecomp (Xbox 360) and
 N64Recomp (Nintendo 64). MKW Switch is an independent implementation.

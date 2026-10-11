@@ -8,5 +8,5 @@
 | Complete builds of the port (`.nro`, `.elf`) | They embed game-derived code. |
 | Data recorded from the game at run time (logs, captures, profiles, shader keys) | May contain game-derived content. |
 | The private runtime core and the translator | Kept private (see [BUILDING.md](BUILDING.md) and [LEGAL.md](../LEGAL.md)). |
-| Nintendo SDK code or headers | Never used as a source for this project. |
+| Nintendo SDK code or headers | Not distributed. The SDK libraries linked inside the game are part of the game's code and are treated exactly like it. |
 | Artwork, logos and icons of Nintendo games | Nintendo property. |

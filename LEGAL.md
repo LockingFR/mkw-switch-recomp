@@ -30,11 +30,16 @@ compatible with that license, with its notices preserved.
 
 Not included in this repository; each is obtained from its own project under its own license:
 
-| Component | License (per its project) |
+| Component | License (see each project for the authoritative terms) |
 |---|---|
-| devkitPro toolchain (devkitA64 / GCC) | GPL (toolchain; generated code not affected) |
+| devkitA64 / GCC compiler | GPL (the compiler itself) |
+| GCC runtime libraries linked into builds (libgcc, libstdc++) | GPL-3.0 with the GCC Runtime Library Exception |
+| newlib C library (as packaged by devkitPro) | collection of permissive licenses |
 | libnx | ISC |
 | deko3d | zlib |
 | uam (deko3d shader compiler) | see its project |
+
+No build of the port is distributed by this project, so no binary-distribution notices are
+currently required; they would have to be added before any binary were ever distributed.
 
 *These notices are informative and are not legal advice.*

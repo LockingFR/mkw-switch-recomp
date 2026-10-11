@@ -34,8 +34,8 @@ Read more:
 ## Performance goals (not current results)
 
 The first target is a **sustained 30 FPS in heavy race scenes** at the game's normal speed, then
-**60 FPS** if the hardware allows it. Neither target has been reached. See
-[STATUS](docs/STATUS.md) for measured figures and their limits.
+**60 FPS** if the hardware allows it. **As of October 2026, neither target has been reached.**
+See [STATUS](docs/STATUS.md) for the dated experimental measurements and their limits.
 
 ## No game files, no keys
 
