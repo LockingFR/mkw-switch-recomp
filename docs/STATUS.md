@@ -32,7 +32,9 @@ project's internal measurement reference build), during race play:
 | 9 October 2026 | 16.4 | 30 five-second blocks selected because they had more than 300 draw calls per frame (150 s in total, not necessarily consecutive) | individual blocks ranged from about 11 to 24 FPS |
 | 10 October 2026 | 19.1 | 30 five-second blocks, same selection rule (150 s in total) | — |
 
-The averages are weighted by the frames of each selected block; blocks below the selection
+Each figure is an average of the per-block FPS values, weighted by the number of frames in each
+block (frame counts estimated from the logged per-block FPS). It is therefore not necessarily the
+same as the total number of frames divided by the elapsed time. Blocks below the selection
 threshold (for example menus or loading) are not included.
 
 - These figures describe **those two runs only**. They are not the game's general performance:

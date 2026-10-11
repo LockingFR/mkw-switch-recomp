@@ -40,7 +40,7 @@ files are authoritative; the entries below are indicative only.
 | newlib (as packaged by devkitPro) | C library, linked into builds | a collection of permissive licenses |
 | libnx | Switch homebrew library, linked into builds | see its project (permissive) |
 | deko3d | Switch GPU library, linked into builds | see its project (permissive) |
-| uam | shader compiler, build-time tool only (not linked into builds) | the LICENSE file of its repository states zlib for uam's own code and MIT for the code it takes from the Mesa 3D graphics library (the devkitPro package metadata lists ISC; the repository's LICENSE file is taken as the reference) |
+| uam | shader compiler, build-time tool only (not linked into builds) | the LICENSE file of its repository states zlib for uam's own code; the code it imports from the Mesa 3D graphics library keeps the license notices of the imported files, which can be checked file by file and are mainly MIT (the devkitPro package metadata lists ISC; the repository's LICENSE file is taken as the reference) |
 
 ## Binaries
 
