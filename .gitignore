@@ -1,27 +1,84 @@
-# Never commit game data, keys, builds or run-time captures to the public repository.
+# Second line of defence only: what may be published is decided by a strict allowlist of files,
+# reviewed before every publication. Never commit game data, keys, builds, captures or secrets.
+
+# Disc images and console/game formats
 *.rvz
 *.iso
 *.wbfs
 *.gcm
-*.wad
+*.gcz
 *.ciso
+*.nkit.*
+*.wad
 *.dol
 *.rel
 *.szs
+*.u8
+*.arc
 *.brres
+*.brstm
+*.thp
+*.tpl
+*.bmg
+*.kmp
+*.kcl
+*.nca
+*.nsp
+*.nsz
+*.xci
+*.xcz
+*.tik
+*.cert
+
+# Keys, credentials and secrets
 *.keys
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.env
+*.env
+*secret*
+*token*
+*credential*
+
+# Builds and binaries
 *.nro
 *.nso
-*.nsp
+*.nacp
 *.elf
 *.map
 *.o
 *.d
 *.a
+*.so
+*.dll
+*.exe
 *.bin
 *.dksh
+*.bundle
+
+# Archives (may hide any of the above)
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.*
+*.tgz
+
+# Run-time captures, logs, profiles, dumps
 *.ppm
 *.log
+*.dmp
+*.mdmp
+*.sav
+hostprof*
+tev_keys*
+capture_*
+
+# Private or generated trees
 /build/
 /dist/
 /snapshots/
@@ -29,6 +86,15 @@
 /data/
 /source/
 /private/
+/core/
+
+# Editors, OS and tools
 .vscode/
+.idea/
 .claude/
 __pycache__/
+*.bak
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db

@@ -19,7 +19,7 @@ the runtime core and all game-derived material are private (see
  AArch64 homebrew (.nro) running on the Switch with libnx + deko3d
 ```
 
-The generated C++ is derived from the game and is therefore never published. Game assets
+The generated C++ is derived from the game and is therefore not published. Game assets
 (models, textures, sounds, courses) are read at run time from the user's own disc files.
 
 ## Runtime layers

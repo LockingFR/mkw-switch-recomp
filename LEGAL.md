@@ -10,7 +10,7 @@ MKW Switch was created and is led by **[LockingFR](https://github.com/LockingFR)
 reserved.** No general open-source license is granted for the original content of this
 repository. Under GitHub's Terms of Service you may view and fork it on GitHub; any other
 reproduction, modification or redistribution requires permission from the rights holders.
-Contact [@LockingFR](https://github.com/LockingFR) for permissions.
+Contact [@LockingFR](https://github.com/LockingFR) (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
 ## Nintendo
 
@@ -21,25 +21,30 @@ the game's files or code and claims no rights over them.
 
 ## Dolphin
 
-The [Dolphin emulator](https://github.com/dolphin-emu/dolphin) (GPL-2.0-or-later), at a pinned
-revision, is the project's behavioural reference for Wii hardware. Any material derived from
-Dolphin's source is subject to GPL-2.0-or-later and will only ever be published under terms
-compatible with that license, with its notices preserved.
+The [Dolphin emulator](https://dolphin-emu.org/), at a pinned revision, is the project's
+behavioural reference for Wii hardware. Dolphin's source files carry their own license notices:
+most are licensed under GPL-2.0-or-later, while some files and bundled third-party components use
+other licenses. Any material derived from a Dolphin file is subject to the license of that file,
+and would only ever be published under terms compatible with it, with its notices preserved.
+This repository contains no Dolphin-derived material.
 
-## Third-party tools and libraries used by the full build
+## Third-party tools and libraries used by the full (private) build
 
-Not included in this repository; each is obtained from its own project under its own license:
+None of them is included in this repository. Each is obtained from its own project, whose license
+files are authoritative; the entries below are indicative only.
 
-| Component | License (see each project for the authoritative terms) |
-|---|---|
-| devkitA64 / GCC compiler | GPL (the compiler itself) |
-| GCC runtime libraries linked into builds (libgcc, libstdc++) | GPL-3.0 with the GCC Runtime Library Exception |
-| newlib C library (as packaged by devkitPro) | collection of permissive licenses |
-| libnx | ISC |
-| deko3d | zlib |
-| uam (deko3d shader compiler) | see its project |
+| Component | Role | License (indicative) |
+|---|---|---|
+| devkitA64 / GCC | compiler toolchain | GPL-3.0-or-later (the compiler itself) |
+| GCC runtime libraries (libgcc, libstdc++) | linked into builds | GPL-3.0-or-later with the GCC Runtime Library Exception |
+| newlib (as packaged by devkitPro) | C library, linked into builds | a collection of permissive licenses |
+| libnx | Switch homebrew library, linked into builds | see its project (permissive) |
+| deko3d | Switch GPU library, linked into builds | see its project (permissive) |
+| uam | shader compiler, build-time tool only (not linked into builds) | declared ISC by its package; it incorporates code from the Mesa 3D project, which is distributed under several licenses (mainly MIT) — see uam's repository |
 
-No build of the port is distributed by this project, so no binary-distribution notices are
-currently required; they would have to be added before any binary were ever distributed.
+## Binaries
+
+This public repository does not contain or distribute any build of the port. Distributing a build
+would require, among other things, the notices of the components linked into it.
 
 *These notices are informative and are not legal advice.*

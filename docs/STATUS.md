@@ -24,13 +24,16 @@ defective, and many modes have not been verified. **There is no public playable 
 
 **The 30 FPS and 60 FPS targets have not been reached.**
 
-Two experimental measurements, taken on a Nintendo Switch with the same internal build (the
-project's current measurement reference), during a few minutes of race play each:
+Two experimental measurements, taken on a Nintendo Switch with the same executable (the
+project's internal measurement reference build), during race play:
 
-| Date | Average game FPS | Measured over | Notes |
+| Date | Average game FPS | What was averaged | Notes |
 |---|---|---|---|
-| 9 October 2026 | 16.4 | 30 five-second blocks (150 s) with more than 300 draw calls per frame | individual blocks ranged from about 11 to 24 FPS |
-| 10 October 2026 | 19.1 | 30 five-second blocks (150 s), same selection rule | — |
+| 9 October 2026 | 16.4 | 30 five-second blocks selected because they had more than 300 draw calls per frame (150 s in total, not necessarily consecutive) | individual blocks ranged from about 11 to 24 FPS |
+| 10 October 2026 | 19.1 | 30 five-second blocks, same selection rule (150 s in total) | — |
+
+The averages are weighted by the frames of each selected block; blocks below the selection
+threshold (for example menus or loading) are not included.
 
 - These figures describe **those two runs only**. They are not the game's general performance:
   the course segment, camera, number of effects and console mode (docked or handheld) were not

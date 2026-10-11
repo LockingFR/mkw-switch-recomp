@@ -10,7 +10,7 @@ custom runtime built with [libnx](https://github.com/switchbrew/libnx) and
 > **Status: experimental, in active development.** There is no public playable release, and
 > none is announced. This repository is the project's public home: it documents the approach,
 > the architecture and the real state of the work. It does not contain the game, game-derived
-> code, or the private runtime core, and it cannot build the port on its own.
+> code, or the private runtime core, and it is not intended to build the port on its own.
 
 ## What the project does
 
@@ -29,7 +29,7 @@ Read more:
 - [Development status](docs/STATUS.md) — what works, what does not, real measurements.
 - [Roadmap](docs/ROADMAP.md) — goals and the criteria used to validate them.
 - [Building](docs/BUILDING.md) — why this repository alone cannot build the port.
-- [Components not distributed](docs/NOT_DISTRIBUTED.md).
+- [Components not included in this repository](docs/NOT_DISTRIBUTED.md).
 
 ## Performance goals (not current results)
 
@@ -39,10 +39,9 @@ See [STATUS](docs/STATUS.md) for the dated experimental measurements and their l
 
 ## No game files, no keys
 
-This project does not distribute, and will never accept contributions of, game files, disc
-images, NAND dumps, console keys, Nintendo SDK code, game-derived generated code, or complete
-binaries of the port. You need your own legally obtained copy of the game for any use of the
-project.
+This repository does not contain or distribute, and does not accept contributions of, game
+files, disc images, NAND dumps, console keys, Nintendo SDK code, game-derived generated code, or
+builds of the port. Any use of the project requires your own legally obtained copy of the game.
 
 ## Contributing and rights
 
